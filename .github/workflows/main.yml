@@ -43,7 +43,7 @@ jobs:
         SPRING_DATASOURCE_PASSWORD: admin
 
     - name: Build Docker Image for Authentication Service
-      run: docker build -t authentication-service:latest ./authentication-service
+      run: docker build -t authentication-service:latest .
 
     - name: Run Authentication Service Docker Container
       run: |
